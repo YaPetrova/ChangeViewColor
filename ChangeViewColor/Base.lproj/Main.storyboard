@@ -29,13 +29,25 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qNG-OM-PH4">
                                         <rect key="frame" x="-2" y="0.0" width="114" height="31"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="redAddingSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="9Hl-Jy-QHA"/>
+                                            <action selector="redAddingValue" destination="BYZ-38-t0r" eventType="valueChanged" id="ByY-Zf-hdQ"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2MF-iZ-c3F">
                                         <rect key="frame" x="-2" y="52" width="114" height="31"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <connections>
+                                            <action selector="greenAddingSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="czO-nL-2qC"/>
+                                            <action selector="greenAddingValue" destination="BYZ-38-t0r" eventType="valueChanged" id="7x9-bK-bUS"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k0A-Pm-nTs">
                                         <rect key="frame" x="-2" y="104" width="114" height="31"/>
+                                        <connections>
+                                            <action selector="blueAddingSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="TH8-t1-KgU"/>
+                                            <action selector="blueAddingValue" destination="BYZ-38-t0r" eventType="valueChanged" id="a8e-qw-8ve"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
@@ -112,12 +124,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueSlider" destination="k0A-Pm-nTs" id="Mvf-HV-tom"/>
-                        <outlet property="blueValueLabel" destination="PVS-YN-E70" id="WQk-eE-vor"/>
-                        <outlet property="greenSlider" destination="2MF-iZ-c3F" id="XYa-pr-XFe"/>
-                        <outlet property="greenValueLabel" destination="mAq-jk-CCL" id="gKB-0V-Xk9"/>
-                        <outlet property="redSlider" destination="qNG-OM-PH4" id="oVw-ze-Ef7"/>
-                        <outlet property="redValueLabel" destination="kDw-t8-IrO" id="V4Y-34-Snq"/>
+                        <outlet property="blueSlider" destination="k0A-Pm-nTs" id="ZGC-L7-EtJ"/>
+                        <outlet property="blueValueLabel" destination="PVS-YN-E70" id="hFu-NX-6qe"/>
+                        <outlet property="colorView" destination="Y99-6J-3VX" id="rgZ-tq-g2k"/>
+                        <outlet property="greenSlider" destination="2MF-iZ-c3F" id="Bgd-cY-xUh"/>
+                        <outlet property="greenValueLabel" destination="mAq-jk-CCL" id="lme-fe-8Ju"/>
+                        <outlet property="redSlider" destination="qNG-OM-PH4" id="xwD-uh-Ie1"/>
+                        <outlet property="redValueLabel" destination="kDw-t8-IrO" id="gy3-gz-2Ch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
